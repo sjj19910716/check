@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<body>
+<div class="container-fluid">
+    <h1 class="text-center">聚力点检系统</h1>
+    <form class="form-horizontal text-center">
+        <div class="form-group">
+            <label style="font-size: large">地址：</label>
+            <label style="font-size: large">{{address.name}}</label>
+            <label style="display: none">{{address.id}}</label>
+        </div>
+        <div class="form-group">
+            <label for="inputName">点检人:</label>
+            <input type="text" class="text-center" id="inputName" style="width: 30%;">
+        </div>
+        <div class="form-group">
+            <label for="note">异常状况：</label>
+            <input type="text" class="text-center input-lg" id="note" style="width: 50%;">
+        </div>
+
+        <div class="col-xs-6">
+            <button type="submit" class="btn btn-success form-group">正常</button>
+        </div>
+        <div class="col-xs-6">
+            <button type="submit" class="btn btn-danger form-group">异常</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
